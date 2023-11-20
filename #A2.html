@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> body {
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+        background-image: url("https://images.prismic.io/portsmouth-rushstreetgaming/b995c038-f778-4e60-aeda-25f30bf561cb_casino-hero.jpg?auto=compress,format");
+        background-color: #000000;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      
+      .container {
+        text-align: center;
+        padding: 20px;
+      }
+      
+      .page-title {
+        color: #ffffff;
+        margin: 0 0 5px;
+      }
+      
+      .page-subtitle {
+        color: #ffffff;
+        margin-top: 5px;
+      }
+      
+      .page-logo {
+        width: 200px;
+      }
+      
+      body > img {
+        margin: 0 10px;
+      }
+      
+      img {
+        max-height: 350px;
+      }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Acerte o Número
+        </h1>
+      </div>
+        <img src="https://static.vecteezy.com/system/resources/previews/008/854/547/original/casino-black-dice-3d-design-elements-free-png.png">
+      </a>
+      <script>
+        let numeroSecreto = parseInt(Math.random() * 1001)
+        let chute;
+        let menorDoQue;
+        let maiorDoQue;
+        while (chute != numeroSecreto) {
+            chute = prompt('Digite um número entre 0 e 1000:')
+            menorDoQue  = chute
+            maiorDoQue  = chute
+
+
+            if (chute == numeroSecreto) {
+                alert('ACERTOU, VOCÊ É UMA PESSOA DE SORTE!')
+            } else if (chute > numeroSecreto) {
+                alert(`Você chutou alto demais, tente um número menor do que : ${menorDoQue}`)
+            } else if (chute < numeroSecreto) {
+                alert(`Você chutou baixo demais, tente um número maior do que : ${maiorDoQue}`)
+            }
+
+        } 
+
+    </script>
+</body>
+</html>
